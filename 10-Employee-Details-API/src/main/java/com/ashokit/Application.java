@@ -16,6 +16,7 @@ public class Application {
 		EmpRepository bean = context.getBean(EmpRepository.class);
 		EmpEntity findByName = bean.findByName("Pipu");
 		System.out.println("Name:::"+findByName);
+		System.out.println("Application::end");
 	}
 
 }

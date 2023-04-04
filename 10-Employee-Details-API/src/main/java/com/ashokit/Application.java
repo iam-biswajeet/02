@@ -12,6 +12,7 @@ import com.ashokit.repository.EmpRepository;
 public class Application {
 
 	public static void main(String[] args) {
+		System.out.println("Application::start");
 		ConfigurableApplicationContext context = SpringApplication.run(Application.class, args);
 		EmpRepository bean = context.getBean(EmpRepository.class);
 		EmpEntity findByName = bean.findByName("Pipu");

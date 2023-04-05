@@ -10,7 +10,11 @@ import com.ashokit.repository.EmpRepository;
 
 @SpringBootApplication
 public class Application {
+
+	private static Integer num=123;
+
 	private static String msg="abc";
+
 	public static void main(String[] args) {
 		System.out.println("Application::start");
 		System.out.println(1);
@@ -20,5 +24,7 @@ public class Application {
 		System.out.println("Name:::"+findByName);
 		System.out.println("Application::end");
 	}
+	public String m1(){
+		//write logic
 
 }

@@ -10,7 +10,7 @@ import com.ashokit.repository.EmpRepository;
 
 @SpringBootApplication
 public class Application {
-
+	private static Integer num=123;
 	public static void main(String[] args) {
 		System.out.println("Application::start");
 		ConfigurableApplicationContext context = SpringApplication.run(Application.class, args);
@@ -19,5 +19,7 @@ public class Application {
 		System.out.println("Name:::"+findByName);
 		System.out.println("Application::end");
 	}
+	public String m1(){
+		//write logic
 
 }

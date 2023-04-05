@@ -10,9 +10,14 @@ import com.ashokit.repository.EmpRepository;
 
 @SpringBootApplication
 public class Application {
+
 	private static Integer num=123;
+
+	private static String msg="abc";
+
 	public static void main(String[] args) {
 		System.out.println("Application::start");
+		System.out.println(1);
 		ConfigurableApplicationContext context = SpringApplication.run(Application.class, args);
 		EmpRepository bean = context.getBean(EmpRepository.class);
 		EmpEntity findByName = bean.findByName("Pipu");

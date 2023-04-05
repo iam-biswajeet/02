@@ -10,7 +10,7 @@ import com.ashokit.repository.EmpRepository;
 
 @SpringBootApplication
 public class Application {
-
+	private static String msg="abc";
 	public static void main(String[] args) {
 		System.out.println("Application::start");
 		System.out.println(1);
